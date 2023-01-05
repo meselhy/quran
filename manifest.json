@@ -1,0 +1,38 @@
+{
+	"name": "Quran Live",
+	"short_name": "Quran Live",
+	"display": "fullscreen",
+	"start_url": "https://meselhy.dev/quran",
+	"scope": ".",
+	"theme_color": "#2f3e46",
+	"background_color": "#2f3e46",
+    "orientation": "portrait",
+	"icons":[
+        {
+            "src": "android-chrome-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "maskable_icon.png",
+            "sizes": "650x650",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+	]
+}

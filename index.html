@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quran Live</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/site.webmanifest">
+  <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="assets/img/browserconfig.xml">
+  <meta name="theme-color" content="#126577">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="./manifest.json">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js"></script>
+  <script>
+ 		if ("serviceWorker" in navigator) {
+ 			window.addEventListener("load", () => {
+ 				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
+ 			});
+ 		}
+  </script>
+</head>
+
+<body>
+  <audio class="radio_list" preload="auto">
+    <source class="radio_list" src="" type="audio/mpeg">
+  </audio>
+  <main>
+    <div class="player">
+      <div class="green_light1"></div>
+      <div class="q1" id="q1"></div>
+      <div class="green_light2"></div>
+      <div class="q2" id="q2"></div>
+      <div class="green_light3"></div>
+      <div class="q3" id="q3"></div>
+
+      <div class="record">
+        <div class="label">
+          <h2>Quran Live</h2>
+        </div>
+        <div class="spindle"></div>
+      </div>
+      <div class="arm-container">
+        <div class="knob weight bottom"></div>
+        <div class="arm"></div>
+        <div class="knob weight top">
+          <button class="play">
+            <div class="tooltip">Play</div>
+          </button>
+        </div>
+      </div>
+      <div class="speaker">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+      <div class="knob volume bottom">
+        <div class="down"></div>
+        <div class="up"></div>
+      </div>
+      <div class="knob volume top"></div>
+    </div>
+  </main>
+  <footer>by<a href="https://meselhy.dev">&nbsp;&nbsp;MESELHY</a></footer>
+</body>
+<script src="assets/script/script.js"></script>
+</html>
